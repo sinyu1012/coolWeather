@@ -120,6 +120,7 @@ public class ChooseAreaFragment extends Fragment {
 
         }
         });
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
