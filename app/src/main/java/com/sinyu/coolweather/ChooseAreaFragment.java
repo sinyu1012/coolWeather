@@ -113,10 +113,15 @@ public class ChooseAreaFragment extends Fragment {
                 else if (currentLevel == LEVEL_CITY) {
                     selectedCity = cityList.get(i);
                     queryCounties();
+                }else if (currentLevel == LEVEL_COUNTY) {
+                    String weatherId = countyList.get(i).getWeatherId();
+
+                        Intent intent = new Intent(getActivity(), WeatherActivity.class);
+                        intent.putExtra("weather_id", weatherId);
+                        startActivity(intent);
+                        getActivity().finish();
+
                 }
-//                else if (currentLevel == LEVEL_COUNTY){
-//
-//                }
 
         }
         });
