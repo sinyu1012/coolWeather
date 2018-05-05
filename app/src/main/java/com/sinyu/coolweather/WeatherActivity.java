@@ -100,7 +100,6 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
-
     private void loadBingPic() {
         String requestBingPic = "http://guolin.tech/api/bing_pic";
         HttpUtil.sendOkHttpRequest(requestBingPic, new Callback() {
